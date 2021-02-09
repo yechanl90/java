@@ -24,6 +24,7 @@ public class Manager extends Employee{
 		sb.append(this.getName());
 		sb.append("|");
 		sb.append(this.getJobTitle());
+		sb.append("|");
 		sb.append(manageJob);
 		
 		return sb.toString();
