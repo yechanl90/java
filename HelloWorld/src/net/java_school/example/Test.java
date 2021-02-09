@@ -18,6 +18,13 @@ public class Test {
 		Manager janggilsan = (Manager)jang;
 		janggilsan.setManageJob("회계");
 		System.out.println(janggilsan);
+		
+		Drivable a = new Driver("슈마허", "대리", "13우2511");
+		System.out.println(a);
+		a.drive();
+		
+		Drivable b = new Transporter();
+		b.drive();
 	}
 
 }
