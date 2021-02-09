@@ -1,23 +1,16 @@
 package net.java_school.example;
 
-public class Employee {
+public class Employee extends AbstractEmployee {
 
-	private String name;
 	private String jobTitle;
 	
 	public Employee() {} 	/* default constructor */
 
 	public Employee(String name, String jobTitle) {
-		this.name = name;
+		super(name);
 		this.jobTitle = jobTitle;
 	}
 	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	public String getJobTitle() {
 		return jobTitle;
 	}
@@ -28,10 +21,15 @@ public class Employee {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(name);
+		sb.append(getName());
 		sb.append("|");
 		sb.append(jobTitle);
 		
 		return sb.toString();
+	}
+
+	@Override
+	public void dowork() {
+		System.out.println("do work!");
 	}
 }
