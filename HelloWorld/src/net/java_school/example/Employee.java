@@ -3,25 +3,27 @@ package net.java_school.example;
 public class Employee {
 
 	private String name;
-	private String jobTile;
+	private String jobTitle;
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getJobTile() {
-		return jobTile;
+	public String getJobTitle() {
+		return jobTitle;
 	}
-	public void setJobTile(String jobTile) {
-		this.jobTile = jobTile;
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
 	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(name);
 		sb.append("|");
-		sb.append(jobTile);
+		sb.append(jobTitle);
 		
 		return sb.toString();
 	}
